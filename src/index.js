@@ -36,6 +36,6 @@ function addingBreed(json){
   for(let ele of a){
     let list = document.createElement('li')
     list.textContent=ele
-    forImg.appendChild(photo)
+    forUl.appendChild(list)
   }
 }
