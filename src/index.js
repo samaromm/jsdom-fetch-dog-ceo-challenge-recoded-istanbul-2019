@@ -49,11 +49,6 @@ function addingBreed(json){
     }
     
   }
-  
-  document.addEventListener('click',function(){
-  let toChange = document.getElementsByTagName('li').textContent
-  toChange.style.color='red';
-})
 }
 
 
