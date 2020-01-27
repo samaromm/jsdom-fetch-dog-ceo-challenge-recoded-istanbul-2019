@@ -33,7 +33,7 @@ function addingDog(json){
 function addingBreed(json){
   let forUl = document.querySelector('#dog-breeds')
   let a= json['message']
-  for(let ele of a){
+  for(let ele in a){
     let list = document.createElement('li')
     list.textContent=ele
     forUl.appendChild(list)
