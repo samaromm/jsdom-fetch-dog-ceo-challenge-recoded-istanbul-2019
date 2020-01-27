@@ -39,6 +39,7 @@ function addingBreed(json){
     if(Array.isArray(ele)){
       
     }
-    else{forUl.appendChild(list)}
+    else
+    {forUl.appendChild(list)}
   }
 }
