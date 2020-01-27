@@ -1,8 +1,5 @@
 console.log('%c HI', 'color: firebrick')
 
-ul.addEventListener('click',function(){
-  li.style.color=red;
-})
 
 document.addEventListener('DOMContentLoaded',function(){
   fetchDogs()
@@ -53,4 +50,8 @@ function addingBreed(json){
     
   }
 }
+
+ul.addEventListener('click',function(){
+  li.style.color=red;
+})
 
