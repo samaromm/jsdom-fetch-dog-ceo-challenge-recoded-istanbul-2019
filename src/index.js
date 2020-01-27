@@ -9,7 +9,7 @@ function fetchDogs(){
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
   .then(resp => resp.json())
-	.then(json => adding(json))
+	.then(json => addingDog(json))
 }
 
 function fetchBreed(){
@@ -20,7 +20,7 @@ function fetchBreed(){
 }
 
 
-function adding(json){
+function addingDog(json){
   let forImg = document.querySelector('#dog-image-container')
   let a= json['message']
   for(let ele of a){
