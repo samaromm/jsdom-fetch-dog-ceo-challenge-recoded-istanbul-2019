@@ -36,10 +36,9 @@ function addingBreed(json){
   for(let ele in a){
     let list = document.createElement('li')
     list.innerText=ele
-    if(Array.isArray(ele)){
+    for(let name of ele){
       
     }
-    else
-    {forUl.appendChild(list)}
+    forUl.appendChild(list)
   }
 }
