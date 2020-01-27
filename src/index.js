@@ -29,3 +29,13 @@ function addingDog(json){
     forImg.appendChild(photo)
   }
 }
+
+function addingBreed(json){
+  let forUl = document.querySelector('#dog-image-container')
+  let a= json['message']
+  for(let ele of a){
+    let photo = document.createElement('img')
+    photo.src=ele
+    forImg.appendChild(photo)
+  }
+}
