@@ -51,6 +51,6 @@ function addingBreed(json){
 }
 
 let lists=document.querySelector('#dog-breeds')
-list.addEventListener('click',function(){
+lists.addEventListener('click',function(){
   li.style.color=red;
 })
