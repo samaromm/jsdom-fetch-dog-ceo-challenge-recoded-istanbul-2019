@@ -34,13 +34,12 @@ function addingBreed(json){
   let forUl = document.querySelector('#dog-breeds')
   let a= json['message']
   for(let ele in a){
-    let list = document.createElement('li')
     let x=a[ele]
     if(x!==0){
     for(let wh of x){
+      let list = document.createElement('li')
       list.innerText=ele+' ' +wh
       forUl.appendChild(list)
-      list=document.createElement('li')
     }}
     
   }
