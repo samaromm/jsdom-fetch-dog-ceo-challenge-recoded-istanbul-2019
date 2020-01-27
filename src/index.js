@@ -51,7 +51,7 @@ function addingBreed(json){
   }
 }
 
-ul.addEventListener('click',function(){
+document.addEventListener('click',function(){
   li.style.color=red;
 })
 
