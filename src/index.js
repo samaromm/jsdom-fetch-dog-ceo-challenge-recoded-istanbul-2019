@@ -34,8 +34,8 @@ function addingBreed(json){
   let forUl = document.querySelector('#dog-breeds')
   let a= json['message']
   for(let ele of a){
-    let photo = document.createElement('li')
-    photo.src=ele
+    let list = document.createElement('li')
+    list.textContent=ele
     forImg.appendChild(photo)
   }
 }
