@@ -1,1 +1,31 @@
 console.log('%c HI', 'color: firebrick')
+
+document.addEventListener('DOMContentLoaded',function(){
+  fetchDogs()
+  fetchBreed()
+})
+
+function fetchDogs(){
+  const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
+  fetch(imgUrl)
+  .then(resp => resp.json())
+	.then(json => adding(json))
+}
+
+function fetchBreed(){
+  const breedUrl = 'https://dog.ceo/api/breeds/list/all'
+  fetch(breedUrl)
+  .then(resp => resp.json())
+	.then(json => adding(json))
+}
+
+
+function adding(json){
+  let forImg = document.querySelector('#dog-image-container')
+  let a= json['message']
+  for(let ele of a){
+    let photo = document.createElement('img')
+    photo.src=ele
+    forImg.appendChild(photo)
+  }
+}
