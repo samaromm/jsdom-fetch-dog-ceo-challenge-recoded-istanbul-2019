@@ -51,7 +51,7 @@ function addingBreed(json){
 }
 
 document.addEventListener('click',function(){
-  let toChange = document.getElementById('#dog-breeds')
+  let toChange = document.querySelector('ul')
   toChange.style.color='red';
 })
 
