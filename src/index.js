@@ -43,7 +43,8 @@ function addingBreed(json){
       list = document.createElement('li')
     }}
     else{
-      
+      list.innerText=ele
+      forUl.appendChild(list)
     }
     
   }
