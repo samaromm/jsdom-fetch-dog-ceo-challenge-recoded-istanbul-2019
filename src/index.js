@@ -40,6 +40,7 @@ function addingBreed(json){
     for(let wh of x){
       list.innerText=ele+' ' +wh
       forUl.appendChild(list)
+      list = document.createElement('li')
     }}
     else{
       
