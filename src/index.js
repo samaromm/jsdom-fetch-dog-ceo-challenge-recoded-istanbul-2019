@@ -34,15 +34,8 @@ function addingBreed(json){
   let forUl = document.querySelector('#dog-breeds')
   let a= json['message']
   for(let ele in a){
-    if(ele.length>0){
-      for(let i=0; i<ele.length; i++){
-       let list = document.createElement('li')
-       list.innerText=ele+" "+ele[i]
-       forUl.appendChild(list)
-    }
-    }
-    
-    
+    let list = document.createElement('li')
+    list.innerText=ele
     forUl.appendChild(list)
   }
 }
