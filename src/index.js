@@ -41,6 +41,9 @@ function addingBreed(json){
       list.innerText=ele+' ' +wh
       forUl.appendChild(list)
     }}
+    else{
+      
+    }
     
   }
 }
