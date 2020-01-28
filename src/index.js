@@ -56,7 +56,7 @@ document.addEventListener('click',function(){
 })
 
 function myFunction(){
-  var x = document.getElementById("mySelect").value;
+  var x = document.getElementById("breed-dropdown").value;
   var text = document.querySelectorAll('li')
   for(let i =0; i<text.length; i++){
     let item = text[i]
