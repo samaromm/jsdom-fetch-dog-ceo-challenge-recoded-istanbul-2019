@@ -62,7 +62,7 @@ function myFunction(){
     let item = text[i]
     let word = item.textContent
     if(word[0]!=x){item.style.display='none'}
-    else {item.style.display='inline'}
+    else {item.style.display='block'}
   }
 }
 
