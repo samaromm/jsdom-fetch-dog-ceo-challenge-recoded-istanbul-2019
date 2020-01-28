@@ -55,6 +55,8 @@ document.addEventListener('click',function(){
   toChange.style.color='red';
 })
 
-
+function myFunction(){
+  
+}
 
 
