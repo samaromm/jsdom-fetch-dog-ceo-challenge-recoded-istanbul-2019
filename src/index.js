@@ -58,12 +58,14 @@ document.addEventListener('click',function(){
 function myFunction(){
   var x = document.getElementById("breed-dropdown").value;
   var text = document.querySelectorAll('li')
+  if(x=='all')text.style.display='block'
+  else{
   for(let i =0; i<text.length; i++){
     let item = text[i]
     let word = item.textContent
     if(word[0]!=x){item.style.display='none'}
     else {item.style.display='block'}
   }
-}
+}}
 
 
