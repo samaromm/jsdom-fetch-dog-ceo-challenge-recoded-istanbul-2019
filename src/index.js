@@ -57,7 +57,7 @@ document.addEventListener('click',function(){
 
 function myFunction(){
   var x = document.getElementById("breed-dropdown").value;
-  if(value!='all'){
+  if(x!='all'){
   var text = document.querySelectorAll('li')
   for(let i =0; i<text.length; i++){
     let item = text[i]
