@@ -58,7 +58,11 @@ document.addEventListener('click',function(){
 function myFunction(){
   var x = document.getElementById("breed-dropdown").value;
   var text = document.querySelectorAll('li')
-  if(x=='all')text.style.display='block'
+  if(x=='all'){
+    for(let i =0; i<text.length; i++){
+      text[i].style.display='block'
+    }
+  }
   else{
   for(let i =0; i<text.length; i++){
     let item = text[i]
